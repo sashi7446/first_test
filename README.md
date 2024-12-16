@@ -1,2 +1,9 @@
 # first_test
-最初の練習。git hub pagesの使い方を知る
+最初の練習。github pagesの使い方を知る
+
+これがREADME.mdね。
+## aaa
+
+```
+println("Hello Github Pages!!")
+```
