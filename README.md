@@ -7,5 +7,6 @@
 ```
 println("Hello Github Pages!!")
 ```
-↓こちらのサイトの手順そのままに進めています↓
+
+こちらのサイトの手順そのままに進めています.
 https://prog-8.com/docs/github-pages
