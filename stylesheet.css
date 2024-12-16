@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #239b76;
+  --secondary-color: #3b5998;
+  --twitter-color: #55acee;
+  --header-bg: rgba(34,49,52,0.9);
+  --text-color: white;
+  --header-height: 65px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -76,12 +85,20 @@ a {
 }
 
 header {
-  height: 65px;
+  height: var(--header-height);
   width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
+  background-color: var(--header-bg);
+  position: fixed;
   top: 0;
   z-index: 10;
+}
+
+/* container内の要素をFlexboxで配置 */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .logo {
@@ -89,26 +106,20 @@ header {
   margin-top: 20px;
 }
 
-.header-left {
-  float: left;
-}
 
+/* header-leftとheader-rightのfloatを削除し、Flexbox用に修正 */
 .header-right {
-  float: right;
+  display: flex;
+  align-items: center;
   margin-right: -25px;
 }
 
 .header-right a {
-  line-height: 65px;
+  line-height: var(--header-height);
   padding: 0 25px;
-  color: white;
+  color: var(--text-color);
   display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
+  transition: background-color 0.3s;
 }
 
 .lesson-wrapper {
@@ -199,11 +210,11 @@ footer {
   display: none;
 }
 
-.clear {
-  clear: left;
-}
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 670px) {
+  .heacer-right {
+    display: none;
+  }
   .lesson {
     width: 50%;
     margin-bottom: 50px;
