@@ -1,97 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
   <header>
     <div class="container">
       <div class="header-left">
-        <img class="logo" src="your-logo.png" alt="Logo">
+        <img class="logo" src="logo.png" alt="ロゴ">
       </div>
-      <span class="fa fa-bars menu-icon"></span>
       <div class="header-right">
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#works">Works</a>
         <a href="#contact">Contact</a>
       </div>
+      <span class="fa fa-bars menu-icon"></span>
     </div>
   </header>
 
-  <div class="top-wrapper">
+  <section class="top-wrapper" id="about">
     <div class="container">
-      <h1>Web Developer<br>Tanaka Yuki</h1>
-      <p>フロントエンド開発とUIデザインを得意とするWeb開発者です。<br>
-         クリエイティブな発想とクリーンなコードで、魅力的なWebサイトを制作します。</p>
+      <h1>Web Developer<br>Portfolio</h1>
+      <p>フロントエンド開発を中心に活動するWebデベロッパーです。<br>使いやすく美しいUIの制作を心がけています。</p>
       <div class="btn-wrapper">
         <a href="#contact" class="btn signup">お問い合わせ</a>
-        <p>or</p>
-        <a href="https://github.com/your-username" class="btn facebook">
-          <span class="fa fa-github"></span>GitHub
+        <p>SNS</p>
+        <a href="https://github.com/" target="_blank" class="btn facebook">
+          <i class="fab fa-github"></i>GitHub
         </a>
-        <a href="https://linkedin.com/in/your-profile" class="btn twitter">
-          <span class="fa fa-linkedin"></span>LinkedIn
+        <a href="https://twitter.com/" target="_blank" class="btn twitter">
+          <i class="fab fa-twitter"></i>Twitter
         </a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="lesson-wrapper">
+  <section class="lesson-wrapper" id="skills">
     <div class="container">
       <div class="heading">
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
       </div>
       <div class="lessons">
         <div class="lesson">
           <div class="lesson-icon">
-            <img src="frontend-icon.png" alt="Frontend">
+            <img src="frontend.png" alt="フロントエンド開発">
             <p>Frontend</p>
           </div>
-          <p class="text-contents">HTML, CSS, JavaScript を使用したモダンなWeb開発。レスポンシブデザインの実装が得意です。</p>
+          <p class="text-contents">HTML/CSS, JavaScript, React.jsを用いたフロントエンド開発が得意です。</p>
         </div>
         <div class="lesson">
           <div class="lesson-icon">
-            <img src="design-icon.png" alt="Design">
-            <p>Design</p>
-          </div>
-          <p class="text-contents">Figma, Adobe XD を使用したUIデザイン。ユーザー体験を重視したデザインを心がけています。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="backend-icon.png" alt="Backend">
+            <img src="backend.png" alt="バックエンド開発">
             <p>Backend</p>
           </div>
-          <p class="text-contents">Node.js, Express での API 開発。データベース設計から実装まで一貫して担当できます。</p>
+          <p class="text-contents">Node.js, Express.jsでのAPI開発の経験があります。</p>
         </div>
         <div class="lesson">
           <div class="lesson-icon">
-            <img src="tools-icon.png" alt="Tools">
-            <p>Tools</p>
+            <img src="design.png" alt="デザイン">
+            <p>Design</p>
           </div>
-          <p class="text-contents">Git, Docker, AWS などの開発ツールの使用経験があります。チーム開発の経験も豊富です。</p>
+          <p class="text-contents">Figmaを使用したUI/UXデザイン。使いやすさを重視したデザインを心がけています。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="other.png" alt="その他">
+            <p>Other</p>
+          </div>
+          <p class="text-contents">Git/GitHub, Docker, AWSなどの開発ツールの使用経験があります。</p>
         </div>
       </div>
-      <div class="clear"></div>
     </div>
-  </div>
+  </section>
 
-  <div class="message-wrapper">
+  <section class="message-wrapper" id="contact">
     <div class="container">
       <div class="heading">
-        <h2>一緒に素晴らしいプロジェクトを作りませんか？</h2>
-        <h3>お気軽にご連絡ください！</h3>
+        <h2>Contact</h2>
+        <h3>お気軽にご連絡ください</h3>
       </div>
-      <a href="mailto:your-email@example.com" class="btn message">Contact Me</a>
+      <a href="mailto:example@example.com" class="btn message">
+        <i class="far fa-envelope"></i> メールを送る
+      </a>
     </div>
-  </div>
+  </section>
 
   <footer>
     <div class="container">
-      <p>© 2024 Your Name. All rights reserved.</p>
+      <small>&copy; 2024 Your Name. All Rights Reserved.</small>
     </div>
   </footer>
 </body>
